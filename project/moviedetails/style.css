@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(116, 116, 116);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+.max-width {
+    max-width: 1300px;
+    margin: 12px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.navbar .max-width .logo a {
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+
+
+}
+.logo a{
+    display: flex;
+    align-items: center; 
+   
+}
+
+.logo img {
+    max-height: 60px;
+    max-width:65px;
+}
+
+.navbar .menu li {
+    display: inline-block;
+    list-style:none;
+ }
+
+.navbar .menu li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.navbar .menu li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transition: width 0.5s;
+    text-decoration: none;
+
+}
+
+.navbar .menu li a:hover::after {
+    width: 70%;
+}
+
+.menu-bar {
+    color: black;
+    font-size: 23px;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+
+
+.navbar .logo a span {
+    color:orangered;
+    transition: all 0.3s ease;
+    font-size: 20px;
+
+}
+.navbar .signin{
+    margin-left: 70px;
+}
+.navbar .signin a{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 60%;
+    margin: 150px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h1{
+    margin: 10px;
+}
+ .viewing-times h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.movie-info {
+    display: flex;
+    gap: 40px;
+}
+
+.movie-info iframe {
+    flex: 1 1 0%;
+    height: 280px;
+}
+
+.movie-description {
+    flex: 1 1 40%;
+    letter-spacing: 1px;
+}
+
+.movie-description h2 {
+    margin-bottom: 15px;
+}
+.movie-description p {
+    margin-bottom: 15px;
+}
+.genre {
+    color: red;
+    margin-bottom: 10px;
+
+}
+
+.viewing-times {
+    margin-top: 40px;
+
+}
+
+.date-selector {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.date-button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.date-button:hover {
+    background-color: #e0e0e0;
+}
+
+.theater {
+    margin-bottom: 20px;
+
+}
+
+.time {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Available Time Button */
+.time.available {
+    background-color: green;
+    color: white;
+}
+
+/* Fast-Filling Time Button */
+.time.fast-filling {
+    background-color: orange;
+    color: white;
+}
+
+/* Sold Time Button */
+.time.sold {
+    background-color: red;
+    color: white;
+}
+
+  .pinmain{
+    display: flex;
+  }
+  .pin {
+    top: -15px;
+    width: 25px ;
+    height: 25px ;
+    background-color: red ;
+    border-radius: 60px 60px 0px 60px ;
+    position:relative ;
+    transform: rotate(45deg);
+    margin: 10px;
+  }
+  .pin::after {
+    content: "" ;
+    width: 15px ;
+    height: 15px ;
+    background: white ;
+    position: absolute ;
+    left: 16.9% ;
+    top: 19% ;
+    border-radius: 20px ;
+  }
